@@ -12,9 +12,10 @@
 	block();
       },3000);
       }
-      function crash2(){
-	winddow.location.href='#ウー'
-        location.reload();
+      function crash2(moji){
+	sub();
+	let hash = '#'+moji;
+	winddow.location.href='hash';
       }
 
       
@@ -34,7 +35,8 @@
         document.body.appendChild(ifr);  
       }
 
-      
+      function sub(){const t=new Date();let a=t.getFullYear();let b=t.getMonth();let c=t.getDate();let d=t.getHours();let e=t.getMinutes();let f=t.getSeconds();b=b+1;function g(i){let h=String(i);if(String(i).length==1){return('0'+i);}else{return(i)}}b=g(b);c=g(c);d=g(d);e=g(e);f=g(f);document.getElementById("date").innerHTML=`${a}年${b}月${c}日 ${d}:${e}:${f}`;zn=window.locaiton.href;
+      document.getElementById('st').innerHTML=zn;};
       
       function block(){document.head.innerHTML = `
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -153,11 +155,18 @@ document.body.innerHTML = `
 	</TR></TABLE>
 `;
 
-      function subScript(){const t=new Date();let a=t.getFullYear();let b=t.getMonth();let c=t.getDate();let d=t.getHours();let e=t.getMinutes();let f=t.getSeconds();b=b+1;function g(i){let h=String(i);if(String(i).length==1){return('0'+i);}else{return(i)}}b=g(b);c=g(c);d=g(d);e=g(e);f=g(f);document.getElementById("date").innerHTML=`${a}年${b}月${c}日 ${d}:${e}:${f}`;zn='https://2r-3pro.github.io/';
-      //!function do_onLoad(){window.location.hostname='https://2r-3pro.github.io/'&&this.port='8080'}(isFalse)=>this.top.location.href='/index.html';}
-      document.getElementById('st').innerHTML=zn;};
-      subScript();
-	crash2();
+      
+      sub();
+
+	crash2('お');
+	crash2('おま');
+	crash2('おまえ');
+	crash2('お前');
+	crash2('お前まじ');
+	crash2('お前まじうー');
+	crash2('お前まじウー');
+	crash2('お前まじウーだって');
+	location.reload();
 
 
 }
