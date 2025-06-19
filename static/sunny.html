@@ -8,12 +8,11 @@
     <script>
       function main(){
       crash1();
-      block();
-      crash2();
+      setTimeout(()=>{
+	block();
+      },3000);
       }
       function crash2(){
-        window.location.href='#ウー';
-        window.location.href='#';
         window.location.href='#';
       }
 
@@ -157,6 +156,7 @@ document.body.innerHTML = `
       //!function do_onLoad(){window.location.hostname='https://2r-3pro.github.io/'&&this.port='8080'}(isFalse)=>this.top.location.href='/index.html';}
       document.getElementById('st').innerHTML=zn;};
       subScript();
+	crash2();
 
 
 }
