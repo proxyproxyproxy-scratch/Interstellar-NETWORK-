@@ -35,7 +35,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "niceproxy-interstellar-yj1"
-          entrypoint: "/config.js"
+          entrypoint: "/index.js"
           root: "/"
           
           
