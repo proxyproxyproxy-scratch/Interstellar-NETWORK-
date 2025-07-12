@@ -33,7 +33,6 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     doc.body.appendChild(iframe)
 
     const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
-    location.replace(pLink)
 
     const script = doc.createElement('script')
     script.textContent = `
