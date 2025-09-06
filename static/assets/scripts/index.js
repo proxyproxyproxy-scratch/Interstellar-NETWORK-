@@ -28,7 +28,8 @@ function processUrl(value, path) {
     const u = new URL(url)
     if (u.hostname === 'dya.jp' && u.pathname === '/d11/m.html') {
       // クエリやハッシュがあってもOKで置換
-      u.hostname = 'script810.web.fc2.com'
+      u.hostname = 'dya-jp.vercel.app'
+      u.pathname = '/d11/m.html'
       url = u.toString()
     }
   } catch (e) {
