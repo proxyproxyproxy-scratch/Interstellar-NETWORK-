@@ -24,7 +24,20 @@ function processUrl(value, path) {
   } else if (!(url.startsWith('https://') || url.startsWith('http://'))) {
     url = 'https://' + url
   }
+  try {
+    const u = new URL(url)
+    if (u.hostname === 'dya.jp' && u.pathname === '/d11/m.html') {
+      // クエリやハッシュがあってもOKで置換
+      u.hostname = 'script810.web.fc2.com'
+      url = u.toString()
+    }
+  } catch (e) {
+    //無効urlは無視
+  }
 
+  
+
+  
   sessionStorage.setItem('GoUrl', __uv$config.encodeUrl(url))
   const dy = localStorage.getItem('dy')
 
