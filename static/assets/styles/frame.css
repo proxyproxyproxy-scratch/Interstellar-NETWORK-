@@ -124,7 +124,7 @@ iframe {
   height: 2em;
   border: none;
   background: none;
-  color: #fff;
+  color: #000;    /*==========================7=7=7=7=7=0 '''default:#fff;''' 0=7=7=7=7=7==========*/
   width: 60vw;
   height: 30px;
   border-radius: 5px;
