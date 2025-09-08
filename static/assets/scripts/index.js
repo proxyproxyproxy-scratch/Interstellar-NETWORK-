@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   navigator.serviceWorker.register('../sw.js?v=4', {
-    scope: '/kmr-inari/',
+    scope: '/kmr/',
   })
 })
 
@@ -45,9 +45,9 @@ function processUrl(value, path) {
   if (path) {
     location.href = path
   } else if (dy === 'true') {
-    window.location.href = '/kmr-inari/q/' + __uv$config.encodeUrl(url)
+    window.location.href = '/kmr/q/' + __uv$config.encodeUrl(url)
   } else {
-    window.location.href = '/kmr-inari/' + __uv$config.encodeUrl(url)
+    window.location.href = '/kmr/' + __uv$config.encodeUrl(url)
   }
 }
 
@@ -60,7 +60,7 @@ function blank(value) {
 }
 
 function dy(value) {
-  processUrl(value, '/kmr-inari/q/' + __uv$config.encodeUrl(value))
+  processUrl(value, '/kmr/q/' + __uv$config.encodeUrl(value))
 }
 
 function isUrl(val = '') {
