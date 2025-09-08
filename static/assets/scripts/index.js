@@ -45,9 +45,9 @@ function processUrl(value, path) {
   if (path) {
     location.href = path
   } else if (dy === 'true') {
-    window.location.href = '/y/q/' + __uv$config.encodeUrl(url)
+    window.location.href = '/a/q/' + __uv$config.encodeUrl(url)
   } else {
-    window.location.href = '/y/' + __uv$config.encodeUrl(url)
+    window.location.href = '/a/' + __uv$config.encodeUrl(url)
   }
 }
 
@@ -60,7 +60,7 @@ function blank(value) {
 }
 
 function dy(value) {
-  processUrl(value, '/y/q/' + __uv$config.encodeUrl(value))
+  processUrl(value, '/a/q/' + __uv$config.encodeUrl(value))
 }
 
 function isUrl(val = '') {
