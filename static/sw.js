@@ -17,7 +17,7 @@ self.addEventListener('fetch', (event) => {
         return await dynamic.fetch(event)
       }
 
-      if (event.request.url.startsWith(location.origin + '/kmr-inari/')) {
+      if (event.request.url.startsWith(location.origin + '/kmr/')) {
         return await uv.fetch(event)
       }
 
