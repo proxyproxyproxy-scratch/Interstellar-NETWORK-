@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   navigator.serviceWorker.register('../sw.js?v=4', {
-    scope: '/a/',
+    scope: '/inari/',
   })
 })
 
@@ -45,9 +45,9 @@ function processUrl(value, path) {
   if (path) {
     location.href = path
   } else if (dy === 'true') {
-    window.location.href = '/a/q/' + __uv$config.encodeUrl(url)
+    window.location.href = '/inari/q/' + __uv$config.encodeUrl(url)
   } else {
-    window.location.href = '/a/' + __uv$config.encodeUrl(url)
+    window.location.href = '/inari/' + __uv$config.encodeUrl(url)
   }
 }
 
@@ -60,7 +60,7 @@ function blank(value) {
 }
 
 function dy(value) {
-  processUrl(value, '/a/q/' + __uv$config.encodeUrl(value))
+  processUrl(value, '/inari/q/' + __uv$config.encodeUrl(value))
 }
 
 function isUrl(val = '') {
