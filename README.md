@@ -7,6 +7,13 @@
 <p>世界一にブロックされにくくした</p>
 
 
+**/a/の部分を変える方法**<br>
+「static/m/config.js」の　2行目　を「prefix: ‘/a/‘,」から「prefix:’/好きな文字/‘,」に置き換える<br>
+「static/sw.js」の　20行目　を「if (event.request.url.startsWith(location.origin + '/a/')) {」から「if (event.request.url.startsWith(location.origin + '/好きな文字/')) {」に置き換える<br>
+「/static/assets/scripts/index.js」の　3行目48行目,50行目,63行目　の「/a/」を「/好きな文字/」に置き換える<br>
+順に実行
+
+
 <div align="center">
     <img src="https://github.com/InterstellarNetwork/Interstellar/assets/89202835/77c63680-544b-42e9-88d6-d288e7681e82">
     <p>Serving over 8+ million users since 2023.<p>
