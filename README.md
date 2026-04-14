@@ -1,17 +1,31 @@
-## THIS IS NOT  USEINTERSTELLAR/INTERSTELLAR
-## THIS FORK IS INTERSTELLARNETWORK/INERSTELLAR version
+# THIS FORK IS A MODIFIED VERSION OF interstellarnetwork/interstellar
 
-## THIS IS THE MOST UNBLOCKABLE INTERSTELLAR OF THE WORLD !!
+# これは interstellarnetwork/interstellar を改変したフォークです
+→→ https://github.com/InterstellarNetwork/Interstellar
+## THIS IS A MODIFIED VERSION OF INTERSTELLAR
 
-<p>**変更点(リミックス点)**</p>
-<p>世界一にブロックされにくくした</p>
-<p>**What I changed**</p>
-<p>This project has been made difficult to be blocked by the filtering service.</p>
-<p>具体的にはindex.htmlをダミーのものにしてプロキシ部分を隠すことによって規制されにくくした。</p>
+## これは Interstellar の改変バージョンです
 
-# ↓以下はImport元のReadMe.md
-# ↓The following is the imported source README.md .
+<p>**変更点 / Modifications**</p>
 
+<p>
+世界一にブロックされにくくした  
+(Made it more resistant to blocking/filtering systems)
+</p>
+
+<p>
+This project has been modified to make it more difficult to be blocked by filtering services.
+</p>
+
+<p>
+具体的には index.html をダミーのものにしてプロキシ部分を隠すことによって規制されにくくした。  
+(Specifically, index.html was replaced with a dummy page to hide proxy-related components and reduce detection.)
+</p>
+
+---
+
+## ↓以下はImport元のREADME.mdです
+## ↓The following is the original README.md from the imported project.
 
 
 <div align="center">
