@@ -7,6 +7,7 @@
 <p>世界一にブロックされにくくした</p>
 <p>**What I changed**</p>
 <p>This project has been made difficult to be blocked by the filtering service.</p>
+<p>具体的にはindex.htmlをダミーのものにしてプロキシ部分を隠すことによって規制されにくくした。</p>
 
 # ↓以下はImport元のReadMe.md
 # ↓The following is the imported source README.md .
